@@ -47,19 +47,21 @@
 </div>
 
 <div class="row">
-    <div class="col-md-12"> 
-        <div class="form-group has-success">
-            <label class="control-label" for="inputSuccess1">Input with success</label>
-            <input type="text" class="form-control" id="message"/>
-            <button type="button" class="btn btn-success" id="sendMessage">Send</button>
+    <div style="background:orange;" class="col-md-3  col-xs-9">
+        <div class=" has-success">
+            <input type="text" class="form-control" id="message" />
         </div>
-               
     </div>
-    <input type="hidden" id="displayName" />
-    <ul id="discussion">
+    <div class="col-md-9 col-xs-3" >
+        <button type="button" class="btn btn-success" id="sendMessage">Send</button>
+    </div>
+    </div>
+<div class="row">
+    <div class="col-md-12 col-xs-12">
 
-    </ul>
+        <ul id="discussion"></ul>
 
-
-
+    </div>
 </div>
+    <input type="hidden" id="displayName" />
+
