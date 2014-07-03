@@ -18,7 +18,7 @@
 
              //the bellow section will call the SendMessageToPage on the cpontroller
              chatHub.client.SendMessageToPage = function (name, massage) {
-                 $('#discussion').append("<li><strong>" + name + "</strong> " + massage + "</li>")
+                 $('#discussion').append("<strong>" + name + "</strong> " + massage +"<br />")
 
              };
 
@@ -58,9 +58,9 @@
     </div>
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
-
-        <ul id="discussion"></ul>
-
+<br />
+        <div id="discussion"></div>
+        
     </div>
 </div>
     <input type="hidden" id="displayName" />
