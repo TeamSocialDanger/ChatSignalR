@@ -24,7 +24,7 @@ namespace ChatSignalR.Hubs
         {
             Clients.All.SendMessageToPage(name, message);
 
-           
+           //test
         
         }
     }
