@@ -48,9 +48,12 @@
 
 <div class="row">
     <div class="col-md-12"> 
-        <input type="text" id="message" />
-        @* bootstrap button beauty *@
-        <button type="button" class="btn btn-success" id="sendMessage">Send</button>
+        <div class="form-group has-success">
+            <label class="control-label" for="inputSuccess1">Input with success</label>
+            <input type="text" class="form-control" id="message"/>
+            <button type="button" class="btn btn-success" id="sendMessage">Send</button>
+        </div>
+               
     </div>
     <input type="hidden" id="displayName" />
     <ul id="discussion">
