@@ -6,8 +6,10 @@ using System.Web.Mvc;
 
 namespace ChatSignalR.Controllers
 {
+   
     public class HomeController : Controller
     {
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
@@ -23,14 +25,14 @@ namespace ChatSignalR.Controllers
         
         }
 
-
+        [AllowAnonymous]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
-
+        [AllowAnonymous]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
